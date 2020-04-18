@@ -35,24 +35,22 @@ namespace LoadBalancer
 
         static bool LoadBalancer(int[] numbers)
         {
-            var r = 0;
-            var t = 1;
-            int f;
+            var l = 0;
+            int r;
 
-            while (r < numbers.Length - 1)
+            while (l < numbers.Length - 1)
             {
-                f = t;
-                while(f < numbers.Length)
+                r = l + 1;
+                while(r < numbers.Length)
                 {
-                    if (IsBalancedForPAndQPositions(numbers, r, f))
+                    if (IsBalancedForPAndQPositions(numbers, l, r))
                     {
                         return true;
                     }
-                    f++;
+                    r++;
                 }
 
-                r++;
-                t++;
+                l++;
             }
             return false;
         }
