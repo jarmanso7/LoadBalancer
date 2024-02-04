@@ -1,6 +1,6 @@
 # Load Balancer
 ## What it is
-Implementation of a solution to the [Load Balancer problem](https://aonecode.com/amazon-online-assessment-load-balancer) in C#:
+Implementation of a solution to the [Load Balancer problem](https://aonecode.com/amazon-online-assessment-load-balancer) in C#. Find an explanation of how I solved this exercise at my blog: [Coding challenge #1 – Load Balancer](https://thecoders5.wordpress.com/2020/04/18/).
 
 ## Explanation
 Given an array containing only positive integers, return if you can pick two integers from the array which cuts the array into three pieces such that the sum of elements in all pieces is equal.
